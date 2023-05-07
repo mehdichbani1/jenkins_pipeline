@@ -15,7 +15,7 @@ contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
 # Running the jenkins container and executing it using a root user in order to install the required tools
-docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest
+docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest '\n'
 docker exec -it --user root jenkins_pipeline /bin/bash
 
 
