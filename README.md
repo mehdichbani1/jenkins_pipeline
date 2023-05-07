@@ -44,4 +44,4 @@ apt install apache2
 mvn --version
 ```
 
-
+In Jenkins, create a pipeline and enter the github url in the pipeline scm field, select the Jenkinsfile path (jenkins/Jenkinsfile) and run a build.
