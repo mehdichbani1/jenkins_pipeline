@@ -21,9 +21,15 @@ docker exec -it --user root jenkins_pipeline /bin/bash
 
 
 apt-get update
+
 apt-get install -y
+
 cat /var/jenkins_home/secrets/initialAdminPassword
+
 apt-get install -y openjdk-17-jdk
+
 apt install maven
+
 mvn --version
+
 apt install apache2
