@@ -14,22 +14,22 @@ you'll be creating yourself during the tutorial and the `jenkins/scripts` subdir
 contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
-# Running the jenkins container 
+## Running the jenkins container 
 ```bash
 docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest
 ```
 
-# Execute a bash shell inside the running Jenkins container with root user privileges
+## Execute a bash shell inside the running Jenkins container with root user privileges
 ```bash
 docker exec -it --user root jenkins_pipeline /bin/bash
 ```
 
-# Get the password to access Jenkins dashboard in http://localhost:2000/ by running the following command in the Jenkins bash shell
+## Get the password to access Jenkins dashboard in http://localhost:2000/ by running the following command in the Jenkins bash shell
 ```bash
 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-# Install the required tools
+## Install the required tools
 ```bash 
 apt-get update
 apt-get install -y
@@ -37,7 +37,7 @@ apt-get install -y openjdk-17-jdk
 apt install maven
 apt install apache2
 ```
-# Check the maven version
+## Check the maven version
 ```bash
 mvn --version
 ```
