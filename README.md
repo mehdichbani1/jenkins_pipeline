@@ -4,7 +4,7 @@ This repository is for the
 [Build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
 tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
 
-The repository contains a simple Java application which outputs the string
+The repository contains a simple Java application which outputs the string 
 "Hello world!" and is accompanied by a couple of unit tests to check that the
 main application works as expected. The results of these tests are saved to a
 JUnit XML report.
@@ -15,7 +15,8 @@ contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
 # Running the jenkins container and executing it using a root user in order to install the required tools
-docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest '\n'
+docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest
+
 docker exec -it --user root jenkins_pipeline /bin/bash
 
 
