@@ -14,6 +14,8 @@ you'll be creating yourself during the tutorial and the `jenkins/scripts` subdir
 contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
+You can run the Jenkins pipeline using the Jenkinsfile inside the jenkins folder using a docker container. The commands to do so are listed below.
+
 ## Running the jenkins container 
 ```bash
 docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest
