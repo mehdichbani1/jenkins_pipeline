@@ -15,7 +15,9 @@ contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
 # Running the jenkins container 
+```bash
 docker run -d --name jenkins_pipeline -p 2000:8080 jenkins/jenkins:latest
+```
 
 # Execute a bash shell inside the running Jenkins container with root user privileges
 ```bash
